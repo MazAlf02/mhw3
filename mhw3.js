@@ -529,7 +529,7 @@ function ricercaInvio(event){
 }
 
 function cercaManga() {
-    const titolo = document.getElementById('ricercaInput').value;
+    const titolo = document.querySelector('#ricercaInput').value;
     fetch(apiURL + '?filter[text]=' + encodeURIComponent(titolo), {
         headers: {
             'Authorization': 'Bearer ' + accessToken
