@@ -1,0 +1,1455 @@
+body{
+    margin:0;
+}
+
+div#navigazione{
+    height: 40px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #E9ECEF;
+}
+
+div#navigazione #containertasti{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #E9ECEF;
+    width: 43.5%;
+}
+
+div#containertasti a{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px 1px;
+    margin: 0px 14px;
+}
+
+a.nav1sel{
+    cursor: pointer;
+}
+
+.sottolinea{
+    text-decoration: underline;
+}
+
+div#logostar{
+    display: flex;
+    height: 85px;
+    background-color: white;
+    background-image: url(Images/logo_starcomics_2021.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 24%;
+}
+
+div#navigazione2{
+    height: 55px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #0195DB;
+}
+
+div#navigazione2 #containertastinav2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6%;
+
+}
+
+div#containertastinav2 a{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding: 10px 10px;
+    margin-left: 0.5%;
+    border-radius: 40%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2bg{
+    background-color: #0186C5;
+}
+
+div#containertastinav2 img{
+    width: 35%;
+}
+
+img#immlente{
+    width: 25px;
+    color: white;
+    position: absolute;
+    margin-left: 800px;
+}
+
+.hidden{
+    display: none;
+}
+
+div#boxRicerca{
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    z-index:3;
+}
+
+div#containerRicerca{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    height: 15%;
+    width: 100%;
+}
+
+div#barraRicerca{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#barraRicerca input{
+    border: white;
+    outline: none;
+    font-size: 200%;
+    background-color: white;
+}
+
+div#pulsantiRicerca{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div#pulsantiRicerca p{
+    font-size: 180%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #0195DB;
+    cursor: pointer;
+}
+
+
+div#containerRisultati{
+    height: 85%;
+    width: 100%;
+    background-color: #0195DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#containerRisultati #infoRisultati1{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+div#infoRisultati1 #copertinaRisultati{
+    height: 55%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+div#infoRisultati1 #dataRisultati{
+    height: 10%;
+    width: 40%;
+    color: white;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+div#containerRisultati #infoRisultati2{
+    background-color: #E8E8E8;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+div#infoRisultati2 #titoloRisultati{
+    margin-top: 1%;
+    height: 10%;
+    width: 100%;
+    color: #0195DB;
+    font-size: 300%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+div#infoRisultati2 #tramaRisultati{
+    height: 100%;
+    width: 100%;
+    color: #0195DB;
+    font-size: 150%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+
+
+div#immagineprimopiano{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: auto;
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+div#overlayannuncio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+}
+
+div#overlayannuncio p{
+    color: white;
+    font-size: 212%;
+    text-align: center;
+    margin: 0.7% auto;
+}
+
+div#selettorenews{
+    display: flex;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+div#selettorenews img{
+    width: 160px;
+    height: 100%;
+    border: 3px solid lightgray;
+    margin-right: 5px;
+    opacity: 0.6;
+}
+
+div#selettorenews img.NoOpaco{
+    opacity: 1;
+}
+
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 58.2%;
+    height: 100%;
+    margin-left: 20.5%;
+}
+
+div#ultimeuscite{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 140px;
+    margin: 62px auto auto auto;
+    background-color: #F0F0F0;
+}
+
+div#ultimeuscite p{
+    color: black;
+    font-size: 34px;
+}
+
+div#elencoultimeuscite{
+    height: 500px;
+    margin-bottom: 51px;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#elencoultimeuscite .fumettiUltimeUscite{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1%;
+}
+
+.avantiIndietroUltimeUscite{
+    height: 60%;
+    width: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.avantiIndietroUltimeUscite img{
+    height: 35%;
+    width: 100%;
+}
+
+.avantiIndietroEvidenziato{
+    background-color: #E8E8E8;
+}
+
+.fumettiUltimeUscite .avantiIndietroScomparsa{
+    display: none;
+}
+
+.fumetto{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.immFumetto{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.immFumetto img{
+    height: 100%;
+}
+
+.nomeFumetto{
+    width: 90%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nomeFumetto h4{
+    color: #008DD4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 110%;
+}
+
+.dataFumetto{
+    width: 90%;
+    height: 5%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dataFumetto p{
+    font-size: 110%;
+    color: #999FA4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.prezzoFumetto{
+    width: 90%;
+    height: 5%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.prezzoCarrello{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
+.prezzoCarrello h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100%;
+}
+.prezzoCarrello img{
+    height: 100%;
+    width: 20%;
+    cursor: pointer;
+}
+
+div#containerMappa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#avvisoMappa{
+    height: 90%;
+    width: 45%;
+}
+
+div#avvisoMappa h3{
+    color: #0195DB;
+    font-size: 450%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+div#mappa{
+    height: 600px;
+    width: 50%;
+    position: relative;
+}
+
+div.containerZoomMappa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    width: 6%;
+}
+
+div.containerZoomMappa button{
+    margin-bottom: 20px;
+    width: 50%;
+    height: 10%;
+    background-color: #0195DB;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+}
+
+
+div.piufamosi{
+    margin-top: 1%;
+    height: 541px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+div.piufamosi img{
+    height: 100%;
+    cursor: pointer;
+}
+
+
+div#piufamosifinale1{
+    margin-top: 1%;
+    height: 210px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#piufamosifinale1 img{
+    height: 103%;
+    cursor: pointer;
+}
+
+div#piufamosifinale2{
+    margin-top: 1%;
+    height: 220px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+div#piufamosifinale2 img{
+    height: 98%;
+    cursor: pointer;
+}
+
+
+div#eventi{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 58.2%;
+    height: 85px;
+    margin-top: 1%;
+    margin-bottom: -2%;
+}
+
+div#eventi p{
+    position: absolute;
+    color: black;
+    font-size: 34px;
+    margin-right: 53.5%;
+}
+
+div.eventinotizie{
+    margin-top: 4%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2%;
+}
+
+div.blocco{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2%;
+    cursor: pointer;
+}
+
+div.blocco img{
+    height: 100px;
+}
+
+div.notizia1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+div.notizia1 h4{
+    margin-top: 0%;
+    color: #0195DB;
+}
+
+div.notizia1 p{
+    margin: -2% auto auto 0%;
+    font-size: 115%;
+    width: 100%;
+}
+
+div#altrieventi{
+    margin-top: 14%;
+    height: 40px;
+}
+
+div#tasto{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.passaggioMouse{
+    opacity: 70%;
+}
+
+div#tasto p{
+    font-size: 16px;
+    height: 50%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding: 10px 10px;
+    background-color: #0195DB;
+    border-radius: 8%;
+}
+
+div#prossimeuscite{
+    margin: 2% auto 2% auto;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+div#prossimeuscite p{
+    position: absolute;
+    color: black;
+    font-size: 34px;
+}
+
+div#elencoprossimeuscite{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#elencoprossimeuscite .fumettiProssimeUscite{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1%;
+}
+
+.fumettiProssimeUscite .avantiIndietroScomparsa{
+    display: none;
+}
+
+.avantiIndietroProssimeUscite{
+    height: 60%;
+    width: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.avantiIndietroProssimeUscite img{
+    height: 35%;
+    width: 100%;
+}
+
+footer{
+    height: 580px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E9ECEF;
+}
+
+div#footer1{
+    background-color: #E9ECEF;
+    height: 78%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
+div#edizionistarcomics{
+    background-color: #E9ECEF;
+    height: 100%;
+    margin-top: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+div#edizionistarcomics h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div#edizionistarcomics p{
+    font-size: 110%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div#edizionistarcomics p a{
+    color: #0195DB;
+    cursor: pointer;
+}
+
+div.brandaltro{
+    background-color: #E9ECEF;
+    height: 100%;
+    margin-top: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+div.brandaltro h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div.brandaltro a{
+    font-size: 110%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 3%;
+    color: #0195DB;
+    cursor: pointer;
+}
+
+div#footer2{
+    background-color: #343A40;
+    height: 22%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#containercopyright{
+    background-color: #343A40;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#containercopyright p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 110%;
+    color: lightgrey;
+}
+
+div#containercopyrightimg{
+    background-color: #343A40;
+    height: 100%;
+    width: 27.5%;
+}
+
+
+@media (max-width: 412px){
+
+    div#navigazione{
+        justify-content: flex-start;
+        height: 40px;
+        width: 100%;
+    }
+
+    div#containertasti a{
+        font-size: 12px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 10px 1px;
+        margin: 0px 22px;
+    }
+
+    div#logostar{
+        display: flex;
+        height: 85px;
+        width: 100%;
+        background-image: url(Images/logo_starcomics_2021.png);
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: 24%;
+    }
+
+
+    div#navigazione2{
+        height: 500px;
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #0195DB;
+        width: 100%;
+    }
+    
+    div#navigazione2 #containertastinav2{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        gap: 6%;
+    }
+    
+    div#containertastinav2 a{
+        font-size: 17px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        margin-top: -6%;
+    }
+    
+    div#containertastinav2 img{
+        width: 35%;
+        margin-top: 20%;
+    }
+
+    div#boxRicerca{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        z-index:3;
+    }
+    
+    div#containerRicerca{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        height: auto;
+        width: 100%;
+    }
+    
+    div#barraRicerca{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div#barraRicerca input{
+        border: white;
+        outline: none;
+        font-size: 200%;
+        background-color: white;
+    }
+    
+    div#pulsantiRicerca{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    div#pulsantiRicerca p{
+        font-size: 180%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #0195DB;
+        cursor: pointer;
+    }
+    
+    
+    div#containerRisultati{
+        height: auto;
+        width: 100%;
+        background-color: #0195DB;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div#containerRisultati #infoRisultati1{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5%;
+    }
+    
+    div#infoRisultati1 #copertinaRisultati{
+        display: flex;
+        justify-content: center;
+        height: 75%;
+    }
+    
+    div#infoRisultati1 #dataRisultati{
+        height: auto;
+        width: 40%;
+        color: white;
+        font-size: 150%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    div#containerRisultati #infoRisultati2{
+        background-color: #E8E8E8;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    div#infoRisultati2 #titoloRisultati{
+        margin-top: 1%;
+        height: 10%;
+        width: 100%;
+        color: #0195DB;
+        font-size: 200%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    div#infoRisultati2 #tramaRisultati{
+        height: 20%;
+        width: 100%;
+        color: #0195DB;
+        font-size: 120%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-y: scroll;
+    }
+    
+
+    div#immagineprimopiano{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-left: 0%;
+        height: 200px;
+        width: 100%;
+        background-image: url(Images/annuncio-aware-home.jpg);
+        background-position: center;
+        background-size: 270%;
+        background-repeat: no-repeat;
+    }
+    
+    div#immagineprimopiano #overlayannuncio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        width: 100%;
+    }
+    
+    div#overlayannuncio p{
+        color: white;
+        font-size: 125%;
+    }
+
+    div#selettorenews{
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    div#selettorenews img{
+        width: 30%;
+        height: 100%;
+        border: 3px solid lightgray;
+        margin-right: 5px;
+    }
+
+    div#ultimeuscite{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 140px;
+        margin: 62px auto auto auto;
+    }
+    
+    div#elencoultimeuscite{
+        height: 500px;
+        margin-bottom: 51px;
+        width: 100%;
+    }
+    
+    div#ultimeuscite p{
+        color: black;
+        font-size: 34px;
+    }
+    
+    div#elencoultimeuscite{
+        height: auto;
+        margin-bottom: 51px;
+        background-color: #F0F0F0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div#elencoultimeuscite .fumettiUltimeUscite{
+        height: auto;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0%;
+    }
+    
+    .avantiIndietroUltimeUscite{
+        height: 5%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 20%;
+    }
+    
+    .avantiIndietroUltimeUscite img{
+        height: 35%;
+        width: 100%;
+    }
+
+    div#containerMappa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div#avvisoMappa{
+        width: 45%;
+    }
+    
+    div#avvisoMappa h3{
+        color: #0195DB;
+        font-size: 150%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+    }
+    
+    div#mappa{
+        margin-top: -80%;
+        height: 500px;
+    }
+    
+    div.containerZoomMappa{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 400px;
+        width: 15%;
+    }
+    
+    div.containerZoomMappa button{
+        width: 50%;
+        height: 10%;
+        background-color: #0195DB;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 25px;
+        text-align: center;
+        padding: 0;
+    }
+    
+    div.piufamosi{
+        margin-top: 0%;
+        height: 250px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2%;
+        margin-bottom: -3%;
+        margin-left: -1.5%;
+    }
+    
+    div.piufamosi img{
+        height: 75%;
+    }
+    
+    
+    div#piufamosifinale1{
+        margin-top: 1%;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: -1.5%;
+    }
+    
+    div#piufamosifinale1 img{
+        height:75%;
+    }
+    
+    div#piufamosifinale2{
+        margin-top: 0%;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2%;
+        margin-left: -1.5%;
+    }
+    
+    div#piufamosifinale2 img{
+        height: 75%;
+    }
+
+    div#eventi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 85px;
+        margin-top: 1%;
+        margin-bottom: 10%;
+        margin-left: -10%;
+    }
+    
+    div#eventi p{
+        position: relative;
+        color: black;
+        font-size: 34px;
+    }
+    
+    div.eventinotizie{
+        margin-top: 4%;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: -25%;
+        height: 500px;
+        width: 70%;
+        gap: 0;
+    }
+    
+    div.blocco{
+        height: 70%;
+        width: 180%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0%;
+        margin: -10% 1%;
+
+    }
+    
+    div.blocco img{
+        height: 25%;
+        margin-left: 18%;
+    }
+
+    div.blocco img#Hiro{
+        height: 26%;
+    }
+
+    div.blocco img#salone{
+        height: 35%;
+    }
+    
+    div.blocco img#oneira{
+        height: 28%;
+    }
+    
+    div.blocco img#comic{
+        height: 35%;
+    }
+    
+    div.notizia1{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    div.notizia1 h4{
+        margin-top: 0%;
+        color: #0195DB;
+    }
+    
+    div.notizia1 p{
+        width: 100%;
+    }
+
+    div#altrieventi{
+        margin-top: 14%;
+        height: 40px;
+        width: 100%;
+    }
+    
+    div#tasto{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+    }
+    
+    div#tasto p{
+        font-size: 16px;
+        height: 50%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        padding: 10px 10px;
+        background-color: #0195DB;
+        border-radius: 8%;
+    }
+    
+    div#prossimeuscite{
+        margin-top: 15%;
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 80%;
+        margin-left: 3%;
+    }
+    
+    div#prossimeuscite p{
+        position: absolute;
+        color: black;
+        font-size: 34px;
+    }
+    
+    div#elencoprossimeuscite{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    div#elencoprossimeuscite .fumettiProssimeUscite{
+        height: auto;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0%;
+    }
+    
+    .fumettiProssimeUscite .avantiIndietroScomparsa{
+        display: none;
+    }
+    
+    .avantiIndietroProssimeUscite{
+        height: 5%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 20%;
+    }
+    
+    .avantiIndietroProssimeUscite img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .avantiIndietroEvidenziato{
+        background-color: #E8E8E8;
+    }
+    
+    .fumettiUltimeUscite .avantiIndietroScomparsa{
+        display: none;
+    }
+    
+    .fumetto{
+        height: 15%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        margin: 0% auto 25% auto;
+        gap: 5%;
+    }
+    
+    .immFumetto{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .immFumetto img{
+        height: 100%;
+    }
+    
+    .nomeFumetto{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .nomeFumetto h4{
+        color: #008DD4;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        font-size: 90%;
+    }
+    
+    .dataFumetto{
+        width: 90%;
+        height: auto;
+        margin-top: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dataFumetto p{
+        font-size: 110%;
+        color: #999FA4;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .prezzoFumetto{
+        width: 90%;
+        height: 5%;
+        margin-top: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+    }
+    
+    .prezzoCarrello{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15%;
+    }
+    
+    .prezzoCarrello h4{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 100%;
+    }
+    .prezzoCarrello img{
+        height: 100%;
+        width: 20%;
+        cursor: pointer;
+    }
+    
+    footer{
+        height: 1000px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        background-color: #E9ECEF;
+    }
+    
+    div#footer1{
+        background-color: #E9ECEF;
+        height: 78%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    div#edizionistarcomics{
+        background-color: #E9ECEF;
+        height: 100%;
+        margin-top: 9%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 5%;
+    }
+    
+    div#edizionistarcomics h4{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    div#edizionistarcomics p{
+        font-size: 110%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    div#edizionistarcomics p a{
+        color: #0195DB;
+        cursor: pointer;
+    }
+    
+    div.brandaltro{
+        background-color: #E9ECEF;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 5%;
+        margin-top: -18%;
+    }
+    
+    div.brandaltro h4{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    div.brandaltro a{
+        font-size: 110%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-bottom: 3%;
+        color: #0195DB;
+        cursor: pointer;
+    }
+    
+    div#footer2{
+        background-color: #343A40;
+        height: 22%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div#containercopyright{
+        background-color: #343A40;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div#containercopyright p{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 110%;
+        color: lightgrey;
+        text-align: center;
+        margin-left: 19%;
+    }
+    
+    
+    
+}

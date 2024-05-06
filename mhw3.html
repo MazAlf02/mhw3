@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mhw3</title>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" />
+    <link rel="stylesheet" href="mhw3.css" />
+    <script src="mhw3.js" defer></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+</head>
+<body>
+
+
+    <div id="sezioneRicerca" class="hidden">
+        <div id="boxRicerca">
+            <div id="containerRicerca">
+                <div id="barraRicerca">
+                    <input type="text" id="ricercaInput" placeholder="Inserire il titolo di un manga">
+                </div>
+                <div id="pulsantiRicerca">
+                    <p id="avviaRicerca">Cerca</p>
+                    <p id="chiudiRicerca">X</p>
+                </div>
+            </div>
+            <div id="containerRisultati">
+                <div id="infoRisultati1">
+                    <div id="copertinaRisultati"></div>
+                    <div id="dataRisultati">
+                        
+                    </div>
+                </div>
+                <div id="infoRisultati2">
+                    <div id="titoloRisultati">
+                        <h3></h3>
+                    </div>
+                    <div id="tramaRisultati">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav>
+        <div id="navigazione">
+            <div id="containertasti">
+                <a>Benvenuto <strong>Ospite</strong></a>
+                <a class="nav1sel">Accedi</a>
+                <a class="nav1sel">Registrati</a>
+                <a class="nav1sel">Newsletter</a>
+            </div>
+        </div>
+        <div id="logostar"></div>
+        <div id="navigazione2">
+            <div id="containertastinav2">
+                <a>NEWS</a>
+                <a>ULTIME USCITE</a>
+                <a>SHOP</a>
+                <a>CATALOGO</a>
+                <a>SFOGLIA ONLINE</a>
+                <a>DIGISTAR</a>
+                <a data-cambiaTesto="#STAR">#ILOVEMANGA</a>
+                <a data-cambiaTesto="#ASTRA">#ILOVECOMICS</a>
+                <a id="tastoLente"><img src="Images/lente ricerca.png"/></a>
+            </div>
+        </div>
+    </nav>    
+    <header>
+        <div id="immagineprimopiano">
+            <div id="overlayannuncio">
+                <p></p>
+            </div>
+        </div>
+        <div id="selettorenews">
+        </div>
+    </header>
+
+    <section>
+        <div id="ultimeuscite">
+            <p>ULTIME USCITE</p>
+        </div>
+        <div id="elencoultimeuscite">
+            <div class="fumettiUltimeUscite">
+                <div data-moveU="indietro" class="avantiIndietroUltimeUscite">
+                    <img src="Images/arrowleft.png"/>
+                </div>
+                <div class="fumetto">
+                    <div class="immFumetto">
+                        
+                    </div>
+                    <div class="nomeFumetto">
+                        <h4></h4>
+                    </div>
+                    <div class="dataFumetto">
+                        <p></p>
+                    </div>
+                    <div class="prezzoFumetto">
+                        <div class="prezzoCarrello">
+                            <h4><strong></strong></h4>
+                        </div>
+                        <div class="prezzoCarrello">
+                            <img src="Images/blue.png"/>
+                            <img src="Images/heart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="fumetto">
+                    <div class="immFumetto">
+                    </div>
+                    <div class="nomeFumetto">
+                        <h4></h4>
+                    </div>
+                    <div class="dataFumetto">
+                        <p></p>
+                    </div>
+                    <div class="prezzoFumetto">
+                        <div class="prezzoCarrello">
+                            <h4><strong></strong></h4>
+                        </div>
+                        <div class="prezzoCarrello">
+                            <img src="Images/blue.png"/>
+                            <img src="Images/heart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="fumetto">
+                    <div class="immFumetto">
+                    </div>
+                    <div class="nomeFumetto">
+                        <h4></h4>
+                    </div>
+                    <div class="dataFumetto">
+                        <p></p>
+                    </div>
+                    <div class="prezzoFumetto">
+                        <div class="prezzoCarrello">
+                            <h4><strong></strong></h4>
+                        </div>
+                        <div class="prezzoCarrello">
+                            <img src="Images/blue.png"/>
+                            <img src="Images/heart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="fumetto">
+                    <div class="immFumetto">
+                    </div>
+                    <div class="nomeFumetto">
+                        <h4></h4>
+                    </div>
+                    <div class="dataFumetto">
+                        <p></p>
+                    </div>
+                    <div class="prezzoFumetto">
+                        <div class="prezzoCarrello">
+                            <h4><strong></strong></h4>
+                        </div>
+                        <div class="prezzoCarrello">
+                            <img src="Images/blue.png"/>
+                            <img src="Images/heart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div data-moveU="avanti" class="avantiIndietroUltimeUscite">
+                    <img src="Images/arrowright.png"/>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <section>
+        <div id="containerMappa">
+            <div id="avvisoMappa">
+                <h3>Trova i nostri</h3><h3>punti vendita</h3><h3>autorizzati</h3>
+            </div>
+            <div class="containerZoomMappa">
+                <button id="zoomAvanti">+</button>
+                <button id="zoomIndietro">-</button>
+            </div>
+            <div id="mappa">
+            </div>
+        </div>
+    </section>
+
+    <article>
+    <section>
+        <div class="piufamosi">
+            <img src="Images/dragonball-super-banner-quad-1.jpg" class="locandinepiufamosi"/>
+            <img src="Images/onepiece-banner-quad.jpg" class="locandinepiufamosi"/>
+        </div>
+        
+        <div class="piufamosi">
+                <img src="Images/demonslayer-banner-quad.jpg" class="locandinepiufamosi"/>
+                <img src="Images/myheroacademia-banner-quad-2.jpg" class="locandinepiufamosi"/>
+        </div>
+        
+        <div class="piufamosi">
+                <img src="Images/webcomics-banner-quad-3.jpg" class="locandinepiufamosi"/>
+                <img src="Images/kaijuno-8-banner-quad-1.jpg" class="locandinepiufamosi"/>
+        </div>
+        
+        <div class="piufamosi">
+                <img src="Images/gachiakuta-banner-quad.jpg" class="locandinepiufamosi"/>
+                <img src="Images/300-banner-quad.jpg" class="locandinepiufamosi"/>
+        </div>
+        
+        <div id="piufamosifinale1">
+                <img src="Images/hereuare-full.jpg"/>
+        </div>
+
+        <div id="piufamosifinale2">
+                <img src="Images/digistar-540x215-1.jpg"/>
+                <img src="Images/anteprima-540x215.jpg"/>
+        </div>
+
+    </section>
+    <section>
+        <div id="eventi">
+            <p>EVENTI</p>
+        </div>
+        <div class="eventinotizie">
+            <div class="blocco">
+                <img src="Images/tour-oneira-news-cover.jpg" id="oneira"/>
+                <div class="notizia1">
+                    <h4>FEDERICA DI MEO IN TOUR PER PRESENTARE ONEIRA</h4>
+                    <p>La disegnatrice impegnata in una serie di appuntamenti autunnali per promuovere il nuovo manga europeo dark fantasy</p>
+                </div>
+            </div>
+            <div class="blocco">
+                <img src="Images/fcbd-cover-2023.jpg" id="comic"/>
+                <div class="notizia1">
+                    <h4>FREE COMIC BOOK DAY ITALIA 2023</h4>
+                    <p>Da venerdì 1 a domenica 10 dicembre torna l’appuntamento annuale che celebra l’arte del fumetto</p>
+                </div>
+            </div>
+        </div>
+        <div class="eventinotizie">
+            <div class="blocco">
+                <img src="Images/hiromashima-cover.jpg" id="Hiro"/>
+                <div class="notizia1">
+                <h4>HIRO MASHIMA PER LA PRIMA VOLTA IN ITALIA, TRA GLI OSPITI DI PUNTA DI LUCCA COMICS & GAMES 2023.</h4>
+                <p>Durante una diretta live dal quartier generale del festival toscano, è stata annunciata la presenza del Maestro, autore di best seller come Fairy Tail, Rave – The Groove Adventure ed Edens Zero.</p>
+                </div>
+            </div>
+            <div class="blocco">
+                <img src="Images/cs-generico-cover.jpg" id="salone"/>
+                <div class="notizia1">
+                <h4>STAR COMICS AL SALONE INTERNAZIONALE DEL LIBRO DI TORINO TRA NOVITÀ, INCONTRI E GRANDI RITORNI</h4>
+                <p>Dal 18 al 22 maggio 2023, stand C40-D39, padiglione 1</p>
+                </div>
+            </div>
+        </div>
+        <div id="altrieventi">
+            <div id="tasto">
+                <p>Vedi tutti gli eventi</p>
+            </div>
+        </div>
+    </section>
+    </article>
+    <section>
+        <div id="prossimeuscite">
+            <p>PROSSIME USCITE</p>
+        </div>
+        <div id="elencoprossimeuscite">
+            <div class="fumettiProssimeUscite">
+                <div data-moveP="indietro" class="avantiIndietroProssimeUscite">
+                    <img src="Images/arrowleft.png"/>
+                </div>
+                <div class="fumetto">
+                    <div class="immFumetto">
+                        
+                    </div>
+                    <div class="nomeFumetto">
+                        <h4></h4>
+                    </div>
+                    <div class="dataFumetto">
+                        <p></p>
+                    </div>
+                    <div class="prezzoFumetto">
+                        <div class="prezzoCarrello">
+                            <h4><strong></strong></h4>
+                        </div>
+                        <div class="prezzoCarrello">
+                            <img src="Images/blue.png"/>
+                            <img src="Images/heart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="fumetto">
+                    <div class="immFumetto">
+                    </div>
+                    <div class="nomeFumetto">
+                        <h4></h4>
+                    </div>
+                    <div class="dataFumetto">
+                        <p></p>
+                    </div>
+                    <div class="prezzoFumetto">
+                        <div class="prezzoCarrello">
+                            <h4><strong></strong></h4>
+                        </div>
+                        <div class="prezzoCarrello">
+                            <img src="Images/blue.png"/>
+                            <img src="Images/heart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="fumetto">
+                    <div class="immFumetto">
+                    </div>
+                    <div class="nomeFumetto">
+                        <h4></h4>
+                    </div>
+                    <div class="dataFumetto">
+                        <p></p>
+                    </div>
+                    <div class="prezzoFumetto">
+                        <div class="prezzoCarrello">
+                            <h4><strong></strong></h4>
+                        </div>
+                        <div class="prezzoCarrello">
+                            <img src="Images/blue.png"/>
+                            <img src="Images/heart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="fumetto">
+                    <div class="immFumetto">
+                    </div>
+                    <div class="nomeFumetto">
+                        <h4></h4>
+                    </div>
+                    <div class="dataFumetto">
+                        <p></p>
+                    </div>
+                    <div class="prezzoFumetto">
+                        <div class="prezzoCarrello">
+                            <h4><strong></strong></h4>
+                        </div>
+                        <div class="prezzoCarrello">
+                            <img src="Images/blue.png"/>
+                            <img src="Images/heart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div data-moveP="avanti" class="avantiIndietroProssimeUscite">
+                    <img src="Images/arrowright.png"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer1">
+            <div id="edizionistarcomics">
+                <h4>EDIZIONI STAR COMICS</h4>
+                <p>Edizioni Star Comics s.r.l. strada delle Selvette,<br/> 1/bis/1 - 06134 Bosco (Perugia)<br/>
+                    P.IVA 03850300546<br/>
+                    Tel. <a>+39 075 591 8353</a> - per informazioni<br/><a>info@starcomics.com</a>, per informazioni sugli<br/>acquisti <a>acquistaonline@starcomics.com</a></p>
+            </div>
+            <div class="brandaltro">
+                <h4>BRAND</h4>
+                <a>Info acquisti</a>
+                <a>Contattaci</a>
+                <a>Condizioni</a>
+            </div>
+            <div class="brandaltro">
+                <h4>ALTRO</h4>
+                <a>News</a>
+                <a>Eventi</a>
+                <a>Iscriviti alla newsletter</a>
+            </div>
+        </div>
+        <div id="footer2">
+            <div id="containercopyright">
+                <p>Copyright © 2024 Edizioni Star Comics | Design by IT-AL | Privacy Policy | Cookie Policy</p>
+            </div>
+            <div id="containercopyrightimg">
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
